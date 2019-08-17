@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c935a7b98b2847eeebbe6b3db47ab56e",
+    "revision": "c4fac24b69ed7f782cb421b5d524a9b5",
     "url": "/proeducatics/index.html"
   },
   {
