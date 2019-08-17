@@ -1,0 +1,62 @@
+@mixin dimension($w: 100%, $h: 100%) {
+  width: $w;
+  height: $h;  
+}
+
+@mixin posicion($t, $l, $p: relative) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  top: 20px;
+  left: 20px;
+
+  .navbar-brand {
+
+    img {
+      @include dimension(60px, 60px);
+    }
+
+    span {
+      padding-left: 15px;
+    }
+  }
+
+  .navbar-dark {
+
+    .navbar-toggler {
+        border-color: rgb(255, 255, 255);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+}
+
+.contenedor-portada {
+  @include dimension(100%, 100vh);
+
+  .contenedor-imagen-portada {
+    @include dimension();
+
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      @include dimension();
+    }
+  }
+
+  &:after {
+    content: '';
+    @include posicion(0, 0, absolute);
+    @include dimension();
+    background: rgba(0, 115, 170, 0.5);
+  }
+}
+
+.bg-dark {
+  background-color: rgba(0, 115, 170, 0.0) !important;
+}
