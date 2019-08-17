@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/proeducatics/static/css/main.69c1f2a2.chunk.css",
+    "main.js": "/proeducatics/static/js/main.ba533899.chunk.js",
+    "main.js.map": "/proeducatics/static/js/main.ba533899.chunk.js.map",
+    "runtime~main.js": "/proeducatics/static/js/runtime~main.978e93c6.js",
+    "runtime~main.js.map": "/proeducatics/static/js/runtime~main.978e93c6.js.map",
+    "static/css/2.9c7ff97b.chunk.css": "/proeducatics/static/css/2.9c7ff97b.chunk.css",
+    "static/js/2.24a50337.chunk.js": "/proeducatics/static/js/2.24a50337.chunk.js",
+    "static/js/2.24a50337.chunk.js.map": "/proeducatics/static/js/2.24a50337.chunk.js.map",
+    "index.html": "/proeducatics/index.html",
+    "precache-manifest.689d9999fdd08770a4d832a16d6306a8.js": "/proeducatics/precache-manifest.689d9999fdd08770a4d832a16d6306a8.js",
+    "service-worker.js": "/proeducatics/service-worker.js",
+    "static/css/2.9c7ff97b.chunk.css.map": "/proeducatics/static/css/2.9c7ff97b.chunk.css.map",
+    "static/css/main.69c1f2a2.chunk.css.map": "/proeducatics/static/css/main.69c1f2a2.chunk.css.map",
+    "static/media/logo.png": "/proeducatics/static/media/logo.a1976d6e.png",
+    "static/media/portada.png": "/proeducatics/static/media/portada.79bac81c.png"
+  }
+}

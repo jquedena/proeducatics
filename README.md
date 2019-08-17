@@ -1,2 +1,0 @@
-# proeducatics
-Proyectos educativos
