@@ -1,21 +1,27 @@
 import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
+import {LinkContainer} from 'react-router-bootstrap'
 import {Nav, Navbar, Image} from 'react-bootstrap';
-import logo from './../images/logo.png';
 
 const Header = ({titulo}) => {
     return (
         <Fragment>
-            <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
-                <Navbar.Brand href="#home">
-                    <Image src={logo} roundedCircle />
-                    <span>{titulo}</span>
-                </Navbar.Brand>
+            <Navbar className="navbar-header" fixed="top" bg="dark" variant="dark" expand="lg">
+                <LinkContainer to="/">
+                    <Navbar.Brand>
+                        <Image src="{logo}" roundedCircle />
+                        <span>{titulo}</span>
+                    </Navbar.Brand>
+                </LinkContainer>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Inicio</Nav.Link>
-                        <Nav.Link href="#link">Nosotros</Nav.Link>
+                        <LinkContainer to="/">
+                            <Nav.Link>Inicio</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/nosotros">
+                            <Nav.Link>Nosotros</Nav.Link>
+                        </LinkContainer>
                         <Nav.Link href="#link">Cont&aacute;ctanos</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
@@ -25,7 +31,8 @@ const Header = ({titulo}) => {
 };
 
 Header.propTypes = {
-    titulo: PropTypes.string.isRequired
+    titulo: PropTypes.string.isRequired,
+    ubicacionLogo: PropTypes.string.isRequired
 };
 
 export default Header;
