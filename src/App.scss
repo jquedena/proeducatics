@@ -34,27 +34,6 @@
   }
 }
 
-.contenedor-portada {
-  @include dimension(100%, 100vh);
-
-  .contenedor-imagen-portada {
-    @include dimension();
-
-    img {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      @include dimension();
-    }
-  }
-
-  &:after {
-    content: '';
-    @include posicion(0, 0, absolute);
-    @include dimension();
-    background: rgba(0, 115, 170, 0.5);
-  }
-}
-
 .portada {
   .navbar-header {
     position: absolute;
@@ -65,5 +44,26 @@
 
   .bg-dark {
     background-color: rgba(0, 115, 170, 0.0) !important;
+  }
+
+  .contenedor-portada {
+    @include dimension(100%, 100vh);
+
+    .contenedor-imagen-portada {
+      @include dimension();
+
+      img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        @include dimension();
+      }
+    }
+
+    &:after {
+      content: '';
+      @include posicion(0, 0, absolute);
+      @include dimension();
+      background: rgba(0, 115, 170, 0.5);
+    }
   }
 }
