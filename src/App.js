@@ -2,20 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'bootstrap/scss/bootstrap.scss';
 import './App.scss';
-import Header from './components/Header';
 import Portada from './views/Portada';
 import Nosotros from './views/Nosotros';
+import Contactanos from './views/Contactanos';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header
-            titulo="proeducatics"
-            ubicacionLogo="" />
         <Route exact path="/" component={Portada} />
         <Route path="/nosotros" component={Nosotros} />
-      </div>
+        <Route path="/contactanos" component={Contactanos} />
     </Router>
   );
 }

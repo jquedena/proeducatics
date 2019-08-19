@@ -1,13 +1,16 @@
 import React from 'react';
-import portada from './../images/portada.png'
+import Layout from './../components/Layout';
+import portada from './../images/portada.png';
 
 const Portada = () => {
     return (
-        <div className="contenedor-portada">
-            <div className="contenedor-imagen-portada">
-                <img className="imagen-portada" src={portada} alt="Portada" />
+        <Layout className="portada">
+            <div className="contenedor-portada">
+                <div className="contenedor-imagen-portada">
+                    <img className="imagen-portada" src={portada} alt="Portada" />
+                </div>
             </div>
-        </div>
+        </Layout>
     );
 };
 

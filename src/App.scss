@@ -55,10 +55,15 @@
   }
 }
 
-.bg-dark {
-  background-color: rgba(0, 115, 170, 0.0) !important;
-}
+.portada {
+  .navbar-header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1023;
+  }
 
-.fixed-top {
-  position: absolute;
+  .bg-dark {
+    background-color: rgba(0, 115, 170, 0.0) !important;
+  }
 }
