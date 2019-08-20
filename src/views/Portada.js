@@ -9,6 +9,9 @@ const Portada = () => {
                 <div className="contenedor-imagen-portada">
                     <img className="imagen-portada" src={portada} alt="Portada" />
                 </div>
+                <div className="contenedor-pie">
+                    Formando mejores docentes
+                </div>
             </div>
         </Layout>
     );

@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './Header';
 import PropTypes from 'prop-types';
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout = props => {
     return (
       <div className={`App ${props.className}`}>
         <Header titulo="proeducatics" />
         {props.children}
+        <Footer/>
       </div>
     );
 };
