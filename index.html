@@ -631,7 +631,7 @@ con el fin de planificar y elaborar programas más eficientes que respondan a su
           </div>
 
         </div>
-
+<!--
         <div class="form">
           <div id="sendmessage">Tu mensaje ha sido enviado. ¡Gracias!</div>
           <div id="errormessage"></div>
@@ -657,7 +657,7 @@ con el fin de planificar y elaborar programas más eficientes que respondan a su
             <div class="text-center"><button type="submit">Enviar mensaje</button></div>
           </form>
         </div>
-
+-->
       </div>
     </section><!-- #contact -->
 
@@ -741,9 +741,34 @@ con el fin de planificar y elaborar programas más eficientes que respondan a su
     </div>
   </footer><!-- #footer -->
 
+  <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v4.0'
+        });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="415379849080241"
+      theme_color="#18d26e"
+      logged_in_greeting="Hola, en que podemos ayudarte ?"
+      logged_out_greeting="Hola, en que podemos ayudarte ?">
+    </div>
+  </div>
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+  <!-- Uncomment below i you want to use a preloader / #0084ff -->
+  <!-- --> <div id="preloader"></div> <!-- -->
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
