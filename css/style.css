@@ -58,8 +58,12 @@ h6 {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
+  /*
   right: 15px;
   bottom: 15px;
+  */
+  right: 95px;
+  bottom: 30px;
   transition: background 0.5s;
   z-index: 11;
 }
@@ -156,11 +160,15 @@ h6 {
   letter-spacing: 3px;
 }
 
+#header #logo h1 a img {
+  border: 2px solid #000;
+}
+
 #header #logo h1 a,
 #header #logo h1 a:hover {
   color: #fff;
   padding-left: 10px;
-  border-left: 4px solid #18d26e;
+  /* border-left: 4px solid #18d26e; */
 }
 
 #header #logo img {
